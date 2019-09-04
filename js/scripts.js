@@ -2,27 +2,25 @@ var repository = [
   {
   name: 'Bulbasaur',
   height: 2.04,
-  types = ['grass','poison'],
+  types: ['grass','poison'],
   abilities: 'overgrow'
   },
   {
   name: 'Weedle',
   height: 1.00,
-  types = ['bug','poison'],
+  types: ['bug','poison'],
   abilities: 'shield dust'
   },
   {
   name: 'Jigglypuff',
   height: 1.08,
-  types = ['normal', 'fairy'],
-  abilities = ['cute charm', 'competitive']
+  types: ['normal', 'fairy'],
+  abilities: ['cute charm', 'competitive']
   },
   {
   name: 'Nidoqueen',
   height: 4.03,
-  types = ['poison', 'ground'],
-  abilities = ['poison point', 'rivalry']
+  types: ['poison', 'ground'],
+  abilities: ['poison point', 'rivalry']
   }
 ];
-
-document.write(repository[1]['name']);
