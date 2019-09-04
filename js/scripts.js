@@ -16,7 +16,7 @@ var repository = [
   height: 1.08,
   types = ['normal', 'fairy'],
   abilities = ['cute charm', 'competitive']
-  }
+  },
   {
   name: 'Nidoqueen',
   height: 4.03,
@@ -24,3 +24,5 @@ var repository = [
   abilities = ['poison point', 'rivalry']
   }
 ];
+
+document.write(repository[1]['name']);
