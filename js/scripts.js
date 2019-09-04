@@ -9,7 +9,7 @@ var repository = [
   name: 'Weedle',
   height: 1.00,
   types = ['bug','poison'],
-  abilities: 'Shield Dust'
+  abilities: 'shield dust'
   },
   {
   name: 'Jigglypuff',
