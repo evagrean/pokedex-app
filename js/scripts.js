@@ -1,19 +1,26 @@
 var repository = [
   {
-  name: '',
-  height: ,
-  types = ['grass','poison']
+  name: 'Bulbasur',
+  height: 2.04,
+  types = ['grass','poison'],
+  abilities: 'overgrow'
   },
   {
-  name: '',
-  height: ,
-  types = ['grass','poison']
+  name: 'Weedle',
+  height: 1.00,
+  types = ['bug','poison'],
+  abilities: 'Shield Dust'
   },
   {
-  name: '',
-  height: ,
-  types = ['grass','poison'] 
+  name: 'Jigglypuff',
+  height: 1.08,
+  types = ['normal', 'fairy'],
+  abilities = ['cute charm', 'competitive']
   }
-  {}
-  {}
+  {
+  name: 'Nidoqueen',
+  height: 4.03,
+  types = ['poison', 'ground'],
+  abilities = ['poison point', 'rivalry']
+  }
 ];
