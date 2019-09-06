@@ -2,6 +2,15 @@ body {
   font-family: 'Manjari', sans-serif;
   font-size: 20px;
 }
+
+.pokeball-icon {
+  height: 60px;
+  width: 60px;
+  float: left;
+  margin-top: 10px;
+  margin-left: 30px;
+}
+
 h1 {
   color: #fff;
   background-color: #4dad5b;
@@ -9,7 +18,9 @@ h1 {
   margin-bottom: 5px;
   margin-left: 20px;
   margin-right: 20px;
-  padding: 20px;
+  padding-left: 80px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   border-radius: 10px;
 }
 
@@ -21,5 +32,5 @@ h1 {
   padding: 20px;
   color: #fff;
   background-color: #30a7d7;
-  border-radius: 10px;  
+  border-radius: 10px;
 }
