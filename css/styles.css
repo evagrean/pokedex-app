@@ -2,7 +2,6 @@ body {
   font-family: 'Manjari', sans-serif;
   font-size: 20px;
 }
-
 h1 {
   color: #fff;
   background-color: #4dad5b;
@@ -23,4 +22,5 @@ h1 {
   color: #fff;
   background-color: #30a7d7;
   border-radius: 10px;
+  
 }
