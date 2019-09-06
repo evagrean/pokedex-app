@@ -25,4 +25,4 @@ var repository = [
   }
 ];
 
-document.write(repository[2]['types'][0]); //expected to be 'normal'
+document.write(repository[2]['types'][0]);
