@@ -1,3 +1,13 @@
+/* Colors used
+
+background-color icon: #e53e00;
+background-color h1: #4dad5b;
+font-color h1 and polemon-list: #fff;
+background-color pokemon-list: #30a7d7;
+
+*/
+
+
 body {
   font-family: 'Manjari', sans-serif;
   font-size: 20px;
@@ -29,7 +39,6 @@ body {
 h1 {
   color: #fff;
   background-color: #4dad5b;
-
   padding: 18px;
   border-radius: 10px;
   flex-grow: 2;
