@@ -24,5 +24,3 @@ var repository = [
   abilities: ['poison point', 'rivalry']
   }
 ];
-
-document.write(repository[2]['types'][0]);
