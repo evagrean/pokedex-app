@@ -26,5 +26,10 @@ var repository = [
 ];
 
 for (i = 0; i < repository.length; i++) {
+  if (repository[i]['height'] >= 4.03) {
+  document.write(repository[i]['name'] + ' (height: ' + repository[i]['height'] + ')' + ' - Wow, that\'s big!');  
+  }
+  else {
   document.write('<p>' + repository[i]['name'] + ' (height: ' + repository[i]['height'] + ')' + '<p>');
+}
 }
