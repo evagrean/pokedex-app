@@ -24,3 +24,7 @@ var repository = [
   abilities: ['poison point', 'rivalry']
   }
 ];
+
+for (i = 0; i < repository.length; i++) {
+  console.log('<p>'repository[i]['name'] + ' (height: ' + repository[i]['height'] + ')<p>');
+}
