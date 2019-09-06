@@ -3,6 +3,24 @@ body {
   font-size: 20px;
 }
 
+h1 {
+  color: #fff;
+  background-color: #4dad5b;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  margin-right: 20px;
+  padding: 20px;
+  border-radius: 10px;
+}
+
 .pokemon-list {
-  margin: 40px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  margin-right: 20px;
+  margin-left: 20px;
+  padding: 20px;
+  color: #fff;
+  background-color: #30a7d7;
+  border-radius: 10px;
 }
