@@ -3,32 +3,43 @@ body {
   font-size: 20px;
 }
 
-.pokeball-icon {
-  height: 60px;
-  width: 60px;
-  float: left;
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 70px;
   margin-top: 10px;
-  margin-left: 30px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.pokeball-icon {
+  height: 70px;
+  width: 70px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-right: 5px;
+  background-color: #e53e00;
+  border-radius: 10px;
 }
 
 h1 {
   color: #fff;
   background-color: #4dad5b;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  margin-left: 20px;
-  margin-right: 20px;
-  padding-left: 80px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+
+  padding: 18px;
   border-radius: 10px;
+  flex-grow: 2;
 }
 
 .pokemon-list {
-  margin-top: 5px;
-  margin-bottom: 10px;
-  margin-right: 20px;
-  margin-left: 20px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  margin-right: 10px;
+  margin-left: 10px;
   padding: 20px;
   color: #fff;
   background-color: #30a7d7;
