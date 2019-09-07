@@ -25,9 +25,11 @@ var repository = [
   }
 ];
 
+var txt = ' - Wow, that\'s big!';
+
 for (i = 0; i < repository.length; i++) {
   if (repository[i].height > 2.04) {
-  document.write(repository[i].name + ' (height: ' + repository[i].height + ')' + ' - Wow, that\'s big!');
+  document.write(repository[i].name + ' (height: ' + repository[i].height + ')' + txt.bold());
   }
   else {
   document.write('<p>' + repository[i].name + ' (height: ' + repository[i].height + ')' + '<p>');
