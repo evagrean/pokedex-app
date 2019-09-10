@@ -35,3 +35,12 @@ for (i = 0; i < repository.length; i++) {
   document.write('<p>' + repository[i].name + ' (height: ' + repository[i].height + ')' + '<p>');
   }
 }
+
+// forEach Loop function to print details of each Pokemon
+
+repository.forEach(function(repository){
+  document.write('name: ' + repository.name + '<br>');
+  document.write('height: ' + repository.height + '<br>');
+  document.write('types: ' + repository.types + '<br>');
+  document.write('abilities: ' + repository.abilities + '<br>' + '<p>');
+})
