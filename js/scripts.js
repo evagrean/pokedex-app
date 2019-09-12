@@ -43,9 +43,6 @@ var pokemonRepository = (function() {
 
 // forEach Loop function to print details of each Pokemon
 
-repository.forEach(function(repository){
-  document.write('<p>' + 'name: ' + repository.name + '<br>');
-  document.write('height: ' + repository.height + '<br>');
-  document.write('types: ' + repository.types + '<br>');
-  document.write('abilities: ' + repository.abilities + '<br>' + '<p>');
+pokemonRepository.getAll().forEach(function(pokemonList) {
+  document.write('name: ' + pokemonList.name + '<br>' + 'height: ' + pokemonList.height + '<br>' + 'types: ' + pokemonList.types + '<br>' + 'abilities: ' + pokemonList.abilities + '<p>');
 })
