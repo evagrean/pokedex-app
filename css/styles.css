@@ -29,7 +29,7 @@ body {
   padding-bottom: 5px;
   padding-left: 10px;
   padding-right: 10px;
-  *margin-left: 4px;*
+  margin-left: 4px;
   margin-right: 2px;
 }
 
@@ -56,7 +56,7 @@ ul {
   border-radius: 2px;
   text-align: left;
   padding-left: 10px;
-  font-size: 20px;
+  font-size: 25px;
   color: #2D3657;
   background-color: #feffca;
 }
