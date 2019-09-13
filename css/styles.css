@@ -3,7 +3,7 @@
 background-color icon: #e53e00;
 background-color h1: #4dad5b;
 font-color h1 and polemon-list: #fff;
-background-color pokemon-list: #30a7d7;
+color pokemon-buttons: #30a7d7;
 
 */
 
@@ -60,5 +60,7 @@ ul {
   text-align: left;
   padding-left: 10px;
   font-size: 16px;
+  background-color: #30a7d7;
+  color: #fff;
 
 }
