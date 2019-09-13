@@ -44,7 +44,7 @@ h1 {
   flex-grow: 2;
 }
 
-.pokemon-list {
+.pokemon-list__details {
   margin-top: 10px;
   margin-bottom: 5px;
   margin-right: 10px;
