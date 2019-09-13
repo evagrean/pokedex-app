@@ -35,6 +35,16 @@ var pokemonRepository = (function() {
     repository.push(pokemon);
   }
 
+  function addListItem(pokemon) {
+    var pokelist = document.querySelector('.pokemon-list');
+    var listItem = document.createElement('li');
+    pokelist.appendChild(listItem);
+    var button = document.createElement('button');
+    listItem.appendChild(button);
+    button.innerText = pokemon.name;
+    button.classList.add('name-button');
+  }
+
   return {
     getAll: getAll,
     add: add
