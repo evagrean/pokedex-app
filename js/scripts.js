@@ -48,5 +48,6 @@ var $unorderedPokemonList = document.querySelector('ul');
 // forEach Loop function to print details of each Pokemon
 
 pokemonRepository.getAll().forEach(function(pokemonList) {
-  
+  var listItem = document.createElement('li');
+  var button = document.createElement('button');
 })
