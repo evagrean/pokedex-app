@@ -52,17 +52,9 @@ var pokemonRepository = (function() {
   };
 })()
 
-// belongs to list of Pokemon names
-
-var $unorderedPokemonList = document.querySelector('ul');
 
 // forEach Loop function to print details of each Pokemon
 
-pokemonRepository.getAll().forEach(function(pokemonList) {
-  var listItem = document.createElement('li');
-  var button = document.createElement('button');
-  button.innerText = pokemonList.name;
-  button.classList.add('name-button');
-  listItem.appendChild(button);
-  $unorderedPokemonList.appendChild(listItem);
+pokemonRepository.getAll().forEach(function(pokemon) {
+  pokemonRepository.addListItem(pokemon);
 })
