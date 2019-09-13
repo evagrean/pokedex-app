@@ -34,7 +34,7 @@ var pokemonRepository = (function() {
   function add(pokemon) {
     repository.push(pokemon);
   }
-
+// in addListItem: creatd <li> and <button> tags and css-class for <button>
   function addListItem(pokemon) {
     var pokelist = document.querySelector('.pokemon-list');
     var listItem = document.createElement('li');
