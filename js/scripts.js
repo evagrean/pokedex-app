@@ -50,4 +50,5 @@ var $unorderedPokemonList = document.querySelector('ul');
 pokemonRepository.getAll().forEach(function(pokemonList) {
   var listItem = document.createElement('li');
   var button = document.createElement('button');
+  button.innerText = pokemonList.name;
 })
