@@ -1,6 +1,6 @@
 /* Colors used
 font-color h1: #2D3657;
-background-color body: #eaeaee;
+background-color body: #CDE7F0;;
 background-color buttons: #feffca;
 
 */
@@ -9,7 +9,7 @@ background-color buttons: #feffca;
 body {
   font-family: 'Manjari', sans-serif;
   font-size: 20px;
-  background-color: #eaeaee;
+  background-color: #CDE7F0;;
 }
 
 .container {
@@ -59,4 +59,5 @@ ul {
   font-size: 25px;
   color: #2D3657;
   background-color: #feffca;
+  opacity: 0.8;
 }
