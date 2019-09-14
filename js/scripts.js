@@ -35,21 +35,30 @@ var pokemonRepository = (function() {
     repository.push(pokemon);
   }
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
-  function addListItem(pokemon) {
-    var pokelist = document.querySelector('.pokemon-list');
-    var listItem = document.createElement('li');
-    pokelist.appendChild(listItem);
-    var button = document.createElement('button');
-    listItem.appendChild(button);
-    button.innerText = pokemon.name;
-    button.classList.add('name-button');
-  }
+function addListItem(pokemon) {
+  var pokelist = document.querySelector('.pokemon-list');
+  var listItem = document.createElement('li'); //var for li element that contains button for each Pokemon
+  var button = document.createElement('button'); //var for button
+  button.innerText = pokemon.name; // pokemon's name on button
+  button.classList.add('name-button'); //added class to <button> for styling
+  listItem.appendChild(button); // button appended to li element as its child
+  pokelist.appendChild(listItem); // li appended to ul as its child
+  button.addEventListener('click', function(event){ // added eventListener
+  showDetails(pokemon);
+  });
+}
 
-  return {
-    getAll: getAll,
-    add: add,
-    addListItem: addListItem
-  };
+//showDetails function to use in a later Task
+function showDetails(pokemon) {
+  console.log(pokemon);
+}
+
+return {
+  getAll: getAll,
+  add: add,
+  addListItem: addListItem,
+  showDetails: showDetails
+};
 })()
 
 
