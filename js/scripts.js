@@ -32,8 +32,14 @@ var pokemonRepository = (function() {
   }
 
   function add(pokemon) {
-    repository.push(pokemon);
-  }
+    if (typeof pokemon === 'object') {
+      repository.push(pokemon);
+    }
+    else {
+      console.log('only objects can be added!');
+      }
+    }
+  
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
   var pokelist = document.querySelector('.pokemon-list');
