@@ -80,7 +80,8 @@ pokemonRepository.getAll().forEach(function(pokemon) {
   pokemonRepository.addListItem(pokemon);
 })
 
-// used filter() function to find specific Pokemon, here example with findBulbasaur
+// used filter() function to find specific Pokemon, here example to find Bulbasaur
+
 var findBulbasaur = pokemonRepository.getAll().filter(function(pokemon){
   return pokemon.name === 'Bulbasaur';
 });
