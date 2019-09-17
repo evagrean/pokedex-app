@@ -4,22 +4,7 @@ var pokemonRepository = (function() {
 
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';  // link for loading pokeapi
 
-// loadList function fetches data from the API
-  function loadList(){
-    return fetch(apiUrl).then(function(response){
-      return response.json();
-    }).then(function(json){
-      json.results.forEach(function(item){
-        var pokemon = {
-          name: item.name,
-          detailsUrl: item.url
-        };
-        add(pokemon);
-      });
-    }).catch(function(e){
-      console.error(e);
-    })
-  }
+/
 
   function getAll() {
     return repository;
@@ -58,6 +43,23 @@ function addListItem(pokemon) {
 function showDetails(pokemon) {
   console.log(pokemon);
 }
+
+// loadList function fetches data from the API
+  function loadList(){
+    return fetch(apiUrl).then(function(response){
+      return response.json();
+    }).then(function(json){
+      json.results.forEach(function(item){
+        var pokemon = {
+          name: item.name,
+          detailsUrl: item.url
+        };
+        add(pokemon);
+      });
+    }).catch(function(e){
+      console.error(e);
+    })
+  }
 
 return {
   getAll: getAll,
