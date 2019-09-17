@@ -86,9 +86,9 @@ return {
 })()
 
 
-pokemonRepository.loadList().then(function(){
-  pokemonRepository.getAll().forEach(function(pokemon){
-    addListItem(pokemon);
+pokemonRepository.loadList(item).then(function(){
+  pokemonRepository.getAll().forEach(function(item){
+    addListItem(item);
   });
 });
 
