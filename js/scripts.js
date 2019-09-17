@@ -81,7 +81,9 @@ return {
   getAll: getAll,
   add: add,
   addListItem: addListItem,
-  showDetails: showDetails
+  showDetails: showDetails,
+  loadList: loadList,
+  loadDetails: loadDetails
 };
 })()
 
