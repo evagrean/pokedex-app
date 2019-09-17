@@ -59,7 +59,7 @@ function loadList() {
     });
   }).catch(function(e) {
     console.error(e);
-  })
+  });
 }
 
 function loadDetails(item) {
