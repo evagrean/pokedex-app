@@ -10,19 +10,12 @@ var pokemonRepository = (function() {
   }
 
   function add(pokemon) {
-    //if (typeof pokemon === 'object') { // check if an object is added
+    if (typeof pokemon === 'object') { // checking if what's added is object type
       repository.push(pokemon);
   }
-    /*else {
+    else {
       console.log('only objects can be added!');
       }
-    if (Object.keys(pokemon) === ['name', 'height', 'types', 'abilities']) { // validate if keys are as expected
-       repository.push(pokemon);
-      }
-    else {
-        console.log('not the right content!');
-      }
-    }*/
 
   //showDetails function shows pokemon's details after clicking on pokemons name
   function showDetails(item) {
