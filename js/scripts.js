@@ -29,7 +29,7 @@ var pokemonRepository = (function() {
     pokemonRepository.loadDetails(item).then(function(){
       console.log(item);
     });
-    }
+  }
 
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
