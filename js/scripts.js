@@ -39,9 +39,11 @@ function addListItem(pokemon) {
   });
 }
 
-//showDetails function to use in a later Task
+//showDetails function shows details after clicking on pokemons name
 function showDetails(pokemon) {
-  console.log(pokemon);
+  pokemonRepository.loadDetails(pokemon).then(function(){
+    console.log(pokemon);
+  }); 
 }
 
 // loadList function fetches data from the API
