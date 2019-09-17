@@ -5,16 +5,15 @@ var pokemonRepository = (function() {
   var apiUrl = 'https://pokeapi.co/api/v2/pokemon/?limit=150';  // link for loading pokeapi
 
 
-
   function getAll() {
     return repository;
   }
 
   function add(pokemon) {
-    if (typeof pokemon === 'object') { // check if an object is added
+    //if (typeof pokemon === 'object') { // check if an object is added
       repository.push(pokemon);
     }
-    else {
+    /*else {
       console.log('only objects can be added!');
       }
     if (Object.keys(pokemon) === ['name', 'height', 'types', 'abilities']) { // validate if keys are as expected
@@ -23,7 +22,7 @@ var pokemonRepository = (function() {
     else {
         console.log('not the right content!');
       }
-    }
+    }*/
 
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
@@ -85,7 +84,7 @@ return {
   loadList: loadList,
   loadDetails: loadDetails
 };
-})()
+})();
 
 
 pokemonRepository.loadList(item).then(function(){
