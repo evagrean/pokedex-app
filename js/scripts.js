@@ -16,7 +16,7 @@ var pokemonRepository = (function() {
     else {
       console.log('only objects can be added!');
       }
-
+  }
   //showDetails function shows pokemon's details after clicking on pokemons name
   function showDetails(item) {
     pokemonRepository.loadDetails(item).then(function(){
