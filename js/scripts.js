@@ -39,11 +39,11 @@ function addListItem(pokemon) {
   });
 }
 
-//showDetails function shows details after clicking on pokemons name
+//showDetails function shows pokemon's details after clicking on pokemons name
 function showDetails(pokemon) {
   pokemonRepository.loadDetails(pokemon).then(function(){
     console.log(pokemon);
-  }); 
+  });
 }
 
 // loadList function fetches data from the API
