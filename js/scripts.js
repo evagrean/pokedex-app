@@ -24,6 +24,13 @@ var pokemonRepository = (function() {
       }
     }*/
 
+  //showDetails function shows pokemon's details after clicking on pokemons name
+  function showDetails(item) {
+    pokemonRepository.loadDetails(item).then(function(){
+      console.log(item);
+    });
+    }
+
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
   var pokelist = document.querySelector('.pokemon-list');
@@ -38,12 +45,7 @@ function addListItem(pokemon) {
   });
 }
 
-//showDetails function shows pokemon's details after clicking on pokemons name
-function showDetails(item) {
-  pokemonRepository.loadDetails(item).then(function(){
-    console.log(item);
-  });
-}
+
 
 // loadList function fetches data from the API
   function loadList(){
