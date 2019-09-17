@@ -39,9 +39,9 @@ function addListItem(pokemon) {
 }
 
 //showDetails function shows pokemon's details after clicking on pokemons name
-function showDetails(pokemon) {
-  pokemonRepository.loadDetails(pokemon).then(function(){
-    console.log(pokemon);
+function showDetails(item) {
+  pokemonRepository.loadDetails(item).then(function(){
+    console.log(item);
   });
 }
 
