@@ -12,7 +12,7 @@ var pokemonRepository = (function() {
   function add(pokemon) {
     //if (typeof pokemon === 'object') { // check if an object is added
       repository.push(pokemon);
-    }
+  }
     /*else {
       console.log('only objects can be added!');
       }
@@ -41,7 +41,7 @@ function addListItem(pokemon) {
   listItem.appendChild(button); // button appended to li element as its child
   pokelist.appendChild(listItem); // li appended to ul as its child
   button.addEventListener('click', function(event){ // added eventListener
-  showDetails(pokemon);
+  showDetails(item);
   });
 }
 
