@@ -10,7 +10,7 @@ var pokemonRepository = (function() {
   }
 
   function add(pokemon) {
-    if (typeof pokemon === 'object') { // checking if what's added is object type
+    if (typeof pokemon === 'object' && Object.keys(pokemon) === ['name', 'detailsUrl', 'imageUrl', 'height', 'types']) { // checking if what's added is typeof object && Object.keys() equal to expected keys
       repository.push(pokemon);
   }
     else {
