@@ -10,7 +10,7 @@ var pokemonRepository = (function() {
   }
 
   function add(pokemon) {
-    if (typeof pokemon === 'object' && Object.keys(pokemon) === ['name', 'detailsUrl', 'imageUrl', 'height', 'types']) { // checking if what's added is typeof object && Object.keys() equal to expected keys
+    if (typeof pokemon === 'object' ) && Object.keys(pokemon) === {'name', 'detailsUrl', 'imageUrl', 'height', 'types'}) { // checking if what's added is typeof object && Object.keys() equal to expected keys
       repository.push(pokemon);
   }
     else {
@@ -33,11 +33,17 @@ function addListItem(pokemon) {
   button.classList.add('name-button'); //added class to <button> for styling
   listItem.appendChild(button); // button appended to li element as its child
   pokelist.appendChild(listItem); // li appended to ul as its child
-  button.addEventListener('click', function(event){ // added eventListener
-  showDetails(pokemon);
-  });
+  //button.addEventListener('click', function(event){ // added eventListener
+  //showDetails(pokemon);
+  //});
+  addEventListenerButton(button, pokemon);
 }
 
+function addEventListenerButton(button, pokemon) {
+  button.addEventListener('click', function(event){
+    showDetails(pokemon);
+  });
+}
 // loadList function fetches data from the API
 function loadList() {
   return fetch(apiUrl).then(function(response) {
