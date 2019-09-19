@@ -82,7 +82,7 @@ return {
 
 pokemonRepository.loadList().then(function(){
   pokemonRepository.getAll().forEach(function(pokemon){
-    addListItem(pokemon);
+    pokemonRepository.addListItem(pokemon);
   });
 });
 
