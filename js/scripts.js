@@ -14,7 +14,7 @@ var pokemonRepository = (function() {
       repository.push(pokemon);
   }
     else {
-      console.log('only objects can be added!');
+      console.log('only objects with predetermined keys can be added!');
       }
   }
   //showDetails function shows pokemon's details after clicking on pokemons name
