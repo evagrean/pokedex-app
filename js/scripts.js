@@ -23,7 +23,7 @@ function addListItem(pokemon) {
   var pokelist = document.querySelector('.pokemon-list');
   var listItem = document.createElement('li'); //var for li element that contains button for each Pokemon
   var button = document.createElement('button'); //var for button
-  button.innerText = pokemon.name; // pokemon's name on button
+  button.innerText = pokemon.name[0].toUpperCase()+pokemon.name.slice(1); // pokemon's name on button
   button.classList.add('name-button'); //added class to <button> for styling
   listItem.appendChild(button); // button appended to li element as its child
   pokelist.appendChild(listItem); // li appended to ul as its child
@@ -69,8 +69,8 @@ function loadDetails(item) {
 //showDetails function shows pokemon's details after clicking on pokemons name
 function showDetails(item) {
   pokemonRepository.loadDetails(item).then(function(){
-    console.log(item);
     showModal(item);
+    console.log(item);
   });
 }
 
@@ -112,6 +112,7 @@ function showModal(item){
   $modalContainer.appendChild(modal);
 
   $modalContainer.classList.add('is-visible');
+
 }
 
 // Hides Modal when clicked on closing button [see eventListener]
@@ -145,7 +146,7 @@ return {
   loadList: loadList,
   loadDetails: loadDetails,
   showModal: showModal,
-  hideModal: hideModal;
+  hideModal: hideModal
 };
 })();
 
@@ -155,6 +156,7 @@ pokemonRepository.loadList().then(function(){
     pokemonRepository.addListItem(pokemon);
   });
 });
+
 
 
 
