@@ -119,6 +119,23 @@ function hideModal(){
   $modalContainer.classList.remove('is-visible');
 }
 
+// EventListener that hides modal when pressing esc
+window.addEventListener('keydown', (e) => {
+  var $modalContainer = document.querySelector('#modal-container');
+  if (e.key === 'Escape' && $modalContainer.classList.contains('is-visible')){
+    hideModal();
+  }
+});
+
+// EventListener that hides modal when clicking outside
+var $modalContainer = document.querySelector('#modal-container');
+$modalContainer.addEventListener('click', (e) => {
+  var target = e.target;
+  if (target === $modalContainer) { // only closed when user directly clicks on overlay
+    hideModal();
+  }
+});
+
 return {
   getAll: getAll,
   add: add,
