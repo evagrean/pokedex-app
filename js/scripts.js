@@ -16,13 +16,7 @@ var pokemonRepository = (function() {
     else {
       console.log('only objects with predetermined keys can be added!');
       }
-  }
-  //showDetails function shows pokemon's details after clicking on pokemons name
-  function showDetails(item) {
-    pokemonRepository.loadDetails(item).then(function(){
-      console.log(item);
-    });
-  }
+  }  
 
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
@@ -69,6 +63,13 @@ function loadDetails(item) {
     item.types = Object.keys(details.types);
   }).catch(function(e) {
     console.error(e);
+  });
+}
+
+//showDetails function shows pokemon's details after clicking on pokemons name
+function showDetails(item) {
+  pokemonRepository.loadDetails(item).then(function(){
+    console.log(item);
   });
 }
 
