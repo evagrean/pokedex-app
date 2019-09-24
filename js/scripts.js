@@ -111,7 +111,12 @@ function showModal(item){
   $modalContainer.appendChild(modal);
 
   $modalContainer.classList.add('is-visible');
+}
 
+// Hides Modal when clicked on closing button [see eventListener]
+function hideModal(){
+  var $modalContainer = document.querySelector('#modal-container');
+  $modalContainer.classList.remove('is-visible');
 }
 
 return {
