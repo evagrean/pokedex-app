@@ -16,7 +16,7 @@ var pokemonRepository = (function() {
     else {
       console.log('only objects with predetermined keys can be added!');
       }
-  }  
+  }
 
 // in addListItem: creatd <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
@@ -71,6 +71,47 @@ function showDetails(item) {
   pokemonRepository.loadDetails(item).then(function(){
     console.log(item);
   });
+}
+
+// Create a modal that shows pokemons details
+function showModal(item){
+  var $modalContainer = document.querySelector('#modal-container');
+
+  // Clear all existing modal content
+  $modalContainer.innerHTML = '';
+
+  // Create div element holding the modal content
+  var modal = document.createElement('div');
+  modal.classList.add('modal');
+
+  // Add pokemon name as modal content
+  var nameElement = document.createElement('h1');
+  nameElement.innerText = item.name[0].toUpperCase()+item.name.slice(1);
+
+  // Add img as modal content
+  var imageElement = document.createElement('img');
+  imageElement.setAttribute = ('src', item.imageUrl);
+  imageElement.classList.add('modal-img');
+
+  // Add pokemon's height and types as modal content
+  var heightElement = document.createElement('p');
+  heightElement.innerText = 'Height: ' + item.height;
+
+  // Add closing button for modal
+  var closeButtonElement = document.createElement('button');
+  closeButtonElement.classList.add('modal-close');
+  closeButtonElement.innerText = 'X';
+  closeButtonElement.addEventListener('click', hideModal);
+
+  // Abbending modal and its content to page
+  modal.appendChild(closeButtonElement);
+  modal.appendChild(nameElement);
+  modal.appendChild(imageElement);
+  modal.appendChild(heightElement);
+  $modalContainer.appendChild(modal);
+
+  $modalContainer.classList.add('is-visible');
+
 }
 
 return {
