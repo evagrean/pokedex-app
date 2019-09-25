@@ -91,7 +91,7 @@ function showModal(item){
 
   // Add img as modal content
   var imageElement = document.createElement('img');
-  imageElement.setAttribute = ('src', item.imageUrl);
+  imageElement.setAttribute('src', item.imageUrl);
   imageElement.classList.add('modal-img');
 
   // Add pokemon's height and types as modal content
