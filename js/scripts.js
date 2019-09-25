@@ -97,6 +97,8 @@ function showModal(item){
   // Add pokemon's height and types as modal content
   var heightElement = document.createElement('p');
   heightElement.innerText = 'Height: ' + item.height;
+  var typesElement = document.createElement('p');
+  typesElement.innerText = 'Types: ' + item.types['0', '1'];
 
   // Add closing button for modal
   var closeButtonElement = document.createElement('button');
@@ -109,6 +111,7 @@ function showModal(item){
   modal.appendChild(nameElement);
   modal.appendChild(imageElement);
   modal.appendChild(heightElement);
+  modal.appendChild(typesElement);
   $modalContainer.appendChild(modal);
 
   $modalContainer.classList.add('is-visible');
