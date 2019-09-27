@@ -18,7 +18,7 @@ var pokemonRepository = (function() {
       }
   }
 
-// in addListItem: creatd <li> and <button> tags and css-class for <button>
+// in addListItem: created <li> and <button> tags and css-class for <button>
 function addListItem(pokemon) {
   var pokelist = document.querySelector('.pokemon-list');
   var listItem = document.createElement('li'); //var for li element that contains button for each Pokemon
