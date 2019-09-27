@@ -1,7 +1,7 @@
 /* Colors used
-font-color h1: #2D3657;
-background-color body: #d1d6de;
-background-color buttons: #feffca;
+font-color and border-color: #2D3657;
+background-color body and modal container: #d1d6de;
+background-color buttons and modal: #f6f7f7;
 
 */
 
@@ -81,9 +81,11 @@ h1 {
 
 .modal-close:hover,
 .modal-close:focus {
-  color: #000;
+  color: #1B2034;
+  font-size: 25px;
   text-decoration: none;
   cursor: pointer;
+  transition: color 0.3s;
 }
 
 .modal h1 {
@@ -118,8 +120,7 @@ ul {
 
 .name-button:hover,
 .name-button:focus {
-  background-color: #2D3657;
-  opacity: 0.4;
-  color: #f6f7f7;
+  box-shadow: 0 4px 8px 0 #2D3657;
   cursor: pointer;
+  transition: box-shadow 0.3s;
 }
