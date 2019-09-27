@@ -116,11 +116,14 @@ ul {
   font-size: 25px;
   color: #2D3657;
   background-color: #f6f7f7;
+  transition: box-shadow 0.3s;
 }
 
 .name-button:hover,
-.name-button:focus {
+.name-button:focus,
+.name-button:active {
   box-shadow: 0 4px 8px 0 #2D3657;
   cursor: pointer;
-  transition: box-shadow 0.3s;
+  border: none;
+
 }
