@@ -60,7 +60,9 @@ function loadDetails(item) {
     // details are added to item
     item.imageUrl = details.sprites.front_default;
     item.height = details.height;
-    item.types = Object.keys(details.types);
+    item.types = details.types.map(function(pokemon) {
+      return " " + pokemon.type.name;
+    });
   }).catch(function(e) {
     console.error(e);
   });
