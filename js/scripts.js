@@ -68,6 +68,7 @@ function loadDetails(item) {
   });
 }
 
+
 //showDetails function shows pokemon's details after clicking on pokemons name
 function showDetails(item) {
   pokemonRepository.loadDetails(item).then(function(){
